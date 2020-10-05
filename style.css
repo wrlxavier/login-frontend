@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1000px;
+    background-image: url(imgs/study-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Monda', sans-serif;
+}
+
+.login{
+    width: 400px;
+    height: 600px;
+    padding: 70px 30px 0 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(50, 50, 50, 0.8);
+    position: absolute;
+    color: whitesmoke;
+    border: 2px solid gray;
+    border-radius:  0 80px 0 80px;
+}
+
+.foto-perfil {
+    border-radius: 50px;
+    position: absolute;
+    left: 230px;
+    top: 60px;
+    transition: 1s;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+#chapeu {
+    top: 50px;
+    left: 55px;
+    transform: rotate(-20deg);
+    transform: scaleX(-1);
+    position: absolute;
+}
+
+h1 {
+    padding: 0 0 30px 30px;
+    letter-spacing: 5px;
+    font-family: 'Satisfy', cursive;
+    font-size: 60px;
+}
+
+.login p {
+    font-size: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.login input {
+    width: 100%;
+    margin-bottom: 21px;
+}
+
+.login input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px dashed whitesmoke;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    color: black;
+    background: #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background: #536dfe;
+    transition: 0.3s;
+}
+
+.login a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: lightgrey;
+    transition: 0.3s;
+}
+
+.login a:hover{
+    transition: 0.3s;
+    color: #536dfe;
+}
+
+@media (max-width: 430px){
+    .login{
+        width: 90%;
+        margin-top: 100px;
+    }
+    .foto-perfil{
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .foto-perfil:hover{
+        transform: scale(1);
+    }
+}
+
+@media (max-height: 630px){
+    .login{
+        margin-top: 30%;
+    }
+}
+
+@media (min-height: 1000px){
+    body{
+        height: 1500px;
+    }
+}
